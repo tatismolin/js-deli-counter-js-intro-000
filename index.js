@@ -17,10 +17,10 @@ function currentLine(katzDeliLine) {
     if (katzDeliLine.length === 0) {
         return "The line is currently empty."
     } else {
-        var wholeText = "";
+        var text = "";
         for (var i = 0; i < katzDeliLine.length; i++) {
-            wholeText = wholeText + `${i + 1}. ${katzDeliLine[i]}, `
+            text = text + `${i + 1}. ${katzDeliLine[i]}, `
         }
-        return "The line is currently: " + wholeText.slice(0, wholeText.length - 2)
+        return "The line is currently: " + text.slice(0, text.length - 2)
     }
 }
